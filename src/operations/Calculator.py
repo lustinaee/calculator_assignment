@@ -2,8 +2,8 @@ from operations.addition import addition
 from operations.subtraction import subtraction
 from operations.multiplication import multiplication
 from operations.division import division
-from operations.squared import squared
-from operations.rooted import rooted
+
+
 
 
 class Calculator:
