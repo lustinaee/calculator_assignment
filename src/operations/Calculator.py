@@ -2,6 +2,8 @@ from operations.addition import addition
 from operations.subtraction import subtraction
 from operations.multiplication import multiplication
 from operations.division import division
+from operations.squared import multiplication
+from operations.rooted import division
 
 
 
