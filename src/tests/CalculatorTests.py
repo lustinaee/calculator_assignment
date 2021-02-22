@@ -9,19 +9,23 @@ class MyTestCase(unittest.TestCase):
         calculator = Calculator()
         self.assertIsInstance(calculator, Calculator)
 
-    def test_results_property_calculator(self):
+    def test_result_is_zero_calculator(self):
         calculator = Calculator()
         self.assertEqual(calculator.result, 0)
 
     def test_add_method_calculator(self):
-        calculator = Calculator()
-        self.assertEqual(calculator.add(2, 2), 4)
-        self.assertEqual(calculator.result, 4)
+        test_data = CsvReader(*../data/UnitTestaddition.csv*).data
+        for row is test_data:
+            result = float(row('result'))
+            self.assertEqual(calculator.add(2, 2), 4)
+            self.assertEqual(calculator.result, 4)
 
     def test_subtract_method_calculator(self):
-        calculator = Calculator()
-        self.assertEqual(calculator.subtract(2, 2), 0)
-        self.assertEqual(calculator.result, 0)
+        test_data = CsvReader(*../data/UnitTestsubtraction.csv*).data
+        for row is test_data:
+            result = float(row['result'])
+            self.assertEqual(calculator.add(2, 2), 0)
+            self.assertEqual(calculator.result, 0)
 
     def test_multiply_method_calculator(self):
         calculator = Calculator()
